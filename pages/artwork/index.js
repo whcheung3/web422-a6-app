@@ -42,23 +42,23 @@ export default function Artwork() {
   } else {
     return (
       <>
-        <Row className="gy-4">
-          {artworkList.length > 0 ? (
-            artworkList[page - 1].map((currentObjectID) => (
+        {artworkList.length > 0 ? (
+          <Row className="gy-4">
+            {artworkList[page - 1].map((currentObjectID) => (
               <Col lg={3} key={currentObjectID}>
                 <ArtworkCard objectID={currentObjectID} />
               </Col>
-            ))
-          ) : (
-            <Card>
-              <Card.Body>
-                <Card.Text>
-                  <h4>Nothing Here</h4>Try searching for something else.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          )}
-        </Row>
+            ))}
+          </Row>
+        ) : (
+          <Card>
+            <Card.Body>
+              <Card.Text>
+                <h4>Nothing Here</h4>Try searching for something else.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        )}
 
         {artworkList.length > 0 && (
           <>
