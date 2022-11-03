@@ -14,7 +14,7 @@ export default function MainNav() {
 
   return (
     <>
-      <Navbar className="fixed-top navbar-dark bg-primary">
+      <Navbar expand="lg" className="fixed-top navbar-dark bg-primary">
         <Container>
           <Navbar.Brand>Wing Ho Cheung</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
