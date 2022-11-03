@@ -8,7 +8,7 @@ import ArtworkCard from "../../components/ArtworkCard";
 const PER_PAGE = 12;
 
 export default function Artwork() {
-  const [artworkList, setArtworkList] = useState([]);
+  const [artworkList, setArtworkList] = useState();
   const [page, setPage] = useState(1);
   const router = useRouter();
   let finalQuery = router.asPath.split("?")[1];
