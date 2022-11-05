@@ -1,6 +1,7 @@
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function MainNav() {
   const router = useRouter();
@@ -20,8 +21,12 @@ export default function MainNav() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/search">Advanced Search</Nav.Link>
+              <Link href="/" passHref>
+                <Nav.Link>Home</Nav.Link>
+              </Link>
+              <Link href="/search" passHref>
+                <Nav.Link>Advanced Search</Nav.Link>
+              </Link>
             </Nav>
 
             <Form className="d-flex" onSubmit={submitForm}>
