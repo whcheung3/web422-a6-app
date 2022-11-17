@@ -57,9 +57,8 @@ export default function Artwork() {
         ) : (
           <Card>
             <Card.Body>
-              <Card.Text>
-                <h4>Nothing Here</h4>Try searching for something else.
-              </Card.Text>
+              <h4>Nothing Here</h4>
+              <Card.Text>Try searching for something else.</Card.Text>
             </Card.Body>
           </Card>
         )}

@@ -19,9 +19,8 @@ export default function Favourites() {
       ) : (
         <Card>
           <Card.Body>
-            <Card.Text>
-              <h4>Nothing Here</h4>Try adding some new artwork to the list.
-            </Card.Text>
+            <h4>Nothing Here</h4>
+            <Card.Text>Try adding some new artwork to the list.</Card.Text>
           </Card.Body>
         </Card>
       )}

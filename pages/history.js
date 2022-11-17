@@ -57,9 +57,8 @@ export default function History() {
       ) : (
         <Card>
           <Card.Body>
-            <Card.Text>
-              <h4>Nothing Here</h4>Try searching for some artwork.
-            </Card.Text>
+            <h4>Nothing Here</h4>
+            <Card.Text>Try searching for some artwork.</Card.Text>
           </Card.Body>
         </Card>
       )}
